@@ -176,7 +176,8 @@ img {
 }
 
 .auth-nav .link {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -188,6 +189,25 @@ img {
 .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: var(--accent-color);
+}
+
+.auth-nav .link::before {
+  content: '';
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.auth-nav .icon-mail::before {
+  width: 16px;
+  height: 12px;
+  background-image: url('../images/envelope.svg');
+}
+
+.auth-nav .icon-tel::before {
+  width: 10px;
+  height: 16px;
+  background-image: url('../images/smartphone.svg');
 }
 
 /* FOOTER */

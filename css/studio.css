@@ -3,6 +3,14 @@
 /* HERO SECTION */
 
 .hero {
+  max-width: 1600px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/bg-hero.jpg');
   background-color: var(--hero-bg-color);
   text-align: center;
 }
@@ -49,6 +57,34 @@
 .feature-item:not(:last-child) {
   margin-right: 30px;
   max-width: 270px;
+}
+
+.feature-item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background: var(--secondary-bg-color);
+  background-repeat: no-repeat;
+  background-size: 70px 70px;
+  background-position: center;
+}
+
+.feature-item.icon-antenna::before {
+  background-image: url('../images/antenna.svg');
+}
+
+.feature-item.icon-clock::before {
+  background-image: url('../images/clock.svg');
+}
+
+.feature-item.icon-diagram::before {
+  background-image: url('../images/diagram.svg');
+}
+
+.feature-item.icon-astronaut::before {
+  background-image: url('../images/astronaut.svg');
 }
 
 /* вариант через соседа */
