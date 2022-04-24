@@ -31,6 +31,7 @@
   --secondary-bg-color: #f5f4fa;
   --button-bg-color: #f5f4fa;
   --card-set-gap: 30px;
+  --social-link-color: #afb1b8;
 }
 
 body {
@@ -58,10 +59,6 @@ img {
   padding: 0;
   margin: 0;
   list-style: none;
-}
-
-.visually-hidden {
-  display: none;
 }
 
 .button {
@@ -101,6 +98,22 @@ img {
   padding-right: 15px;
 
   /* outline: 1px solid tomato; */
+}
+
+/* VISUALLY-HIDDEN */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* PAGE HEADER */
@@ -191,7 +204,12 @@ img {
   color: var(--accent-color);
 }
 
-.auth-nav .link::before {
+.auth-nav .icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+/* .auth-nav .link::before {
   content: '';
   margin-right: 10px;
   background-repeat: no-repeat;
@@ -208,7 +226,7 @@ img {
   width: 10px;
   height: 16px;
   background-image: url('../images/smartphone.svg');
-}
+} */
 
 /* FOOTER */
 
